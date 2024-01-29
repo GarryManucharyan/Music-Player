@@ -1,0 +1,38 @@
+button {
+    white-space     : nowrap;
+    overflow        : hidden;
+    position        : relative;
+    background-color: rgb(245, 245, 245);
+    border          : solid rgb(150, 150, 150) 1px;
+    height          : 80%;
+    top             : 10%;
+}
+
+.header-button {
+    cursor       : pointer;
+    position     : relative;
+    border-radius: 3px 0 0 3px;
+    text-align   : center;
+    left         : 1%;
+    width        : 25%;
+}
+
+.header-button:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.dropdown {
+    cursor       : pointer;
+    position     : relative;
+    padding      : 8px;
+    border-radius: 0 3px 3px 0;
+    border-left  : solid rgb(150, 150, 150) 1px;
+    left         : 1px;
+    text-align   : center;
+    width        : 7%;
+    min-width    : 20px;
+}
+
+.dropdown:hover {
+    background-color: rgb(235, 235, 235);
+}

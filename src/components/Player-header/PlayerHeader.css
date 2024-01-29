@@ -1,0 +1,44 @@
+.player-header {
+    display         : flex;
+    align-items     : center;
+    justify-content : space-between;
+    background-color: rgb(220, 220, 220);
+    border          : solid rgb(150, 150, 150) 1px;
+    border-radius   : 3px;
+    height          : 36px;
+}
+
+.buttons-row {
+    display: flex;
+    width  : 50%;
+    height : 100%;
+}
+
+.search-row {
+    display: flex;
+    width  : 50%;
+    height : 100%;
+}
+
+.search-input {
+    position     : relative;
+    box-sizing   : border-box;
+    width        : 66%;
+    height       : 80%;
+    left         : 1%;
+    border       : solid 1px rgb(150, 150, 150);
+    border-radius: 20px;
+    padding      : 0 10px;
+    top          : 10%
+}
+
+.header-button {
+    display        : flex;
+    justify-content: left;
+    align-items    : center;
+}
+
+.header-button img {
+    width : 12px;
+    margin: 0 5px;
+}

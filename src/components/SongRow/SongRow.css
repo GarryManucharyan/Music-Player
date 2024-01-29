@@ -1,0 +1,78 @@
+.song-row {
+    display        : flex;
+    justify-content: space-between;
+    gap            : 2px;
+    border-bottom  : solid 1px lightgray;
+    color          : gray;
+    transition     : 250ms;
+}
+
+.song-row-onplay {
+    background-color: rgb(240, 240, 240);
+    text-shadow     : 1px 1px 3px black;
+    color           : white;
+}
+
+.song-row:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.song-row-onplay:hover {
+    background-color: lightgray;
+    color           : white;
+
+}
+
+.song-content-wrapper {
+    width          : 100%;
+    display        : flex;
+    justify-content: space-between;
+    gap            : 2px;
+}
+
+.song-data-block {
+    background-color: transparent;
+    text-overflow   : ellipsis;
+    white-space     : nowrap;
+    overflow        : hidden;
+    display         : flex;
+    align-items     : center;
+    padding         : 5px;
+    border-radius   : 2px;
+}
+
+.song-data-block:nth-child(1) {
+    width: 46%;
+}
+
+.song-data-block:nth-child(2) {
+    width: 46%;
+}
+
+.song-data-block:nth-child(3) {
+    width: 8%;
+}
+
+.corner-block {
+    display         : flex;
+    justify-content : space-evenly;
+    height          : 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius   : 2px;
+    background-color: transparent;
+}
+
+.corner-block:nth-child(1) {
+    width: 65px;
+}
+
+.corner-block:nth-child(3) {
+    width: 120px;
+}
+
+.icon {
+    cursor: pointer;
+    width : 12px;
+    height: 100%;
+    margin: auto;
+}
