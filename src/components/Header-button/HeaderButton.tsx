@@ -1,13 +1,11 @@
 import { ButtonPropsType } from "../../types";
 import { Icon } from "../IconSVG/IconSVG";
 import "./HeaderButton.css";
-import React, { memo } from "react";
-
 interface IHeaderButtonProps extends ButtonPropsType {
     iconPath?: string;
 }
 
-export const HeaderButton = ({ buttonName, onClick = () => {}, iconPath }: IHeaderButtonProps ) => {
+export const HeaderButton = ({ buttonName, onClick = () => { }, iconPath }: IHeaderButtonProps) => {
     return (
         <>
             <button type="button" className="header-button" onClick={onClick}>

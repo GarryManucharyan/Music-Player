@@ -1,11 +1,10 @@
-import { useEffect } from "react";
-
 import { playSong } from "../../store/playerSlice";
+import { useAudio } from "../../hooks/useAudio";
 import { useAppDispatch } from "../../hooks";
 import { Icon } from "../IconSVG/IconSVG";
 import { SongType } from "../../types";
+import { useEffect } from "react";
 import "./SongRow.css";
-import { useAudio } from "../../hooks/useAudio";
 
 export const SongRow: React.FC<{ song: SongType }> = ({ song }) => {
     const { songName, artistName, trackNumber, isPlayed, id, path } = { ...song }

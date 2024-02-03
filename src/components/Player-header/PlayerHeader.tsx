@@ -1,12 +1,13 @@
-import React, { useState } from "react";
-import "./PlayerHeader.css";
 import { HeaderButton } from "../Header-button/HeaderButton";
-import { useAppSelector } from "../../hooks";
 import { UploadForm } from "../Upload-form/UploadForm";
+import { useAppSelector } from "../../hooks";
+import React, { useState } from "react";
 import Modal from "../Modal";
+import "./PlayerHeader.css";
 
 export const PlayerHeader: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const songsList = useAppSelector(state => state.player);
 
     const handleOpenModal = () => {
         setIsOpen(true);
@@ -15,9 +16,6 @@ export const PlayerHeader: React.FC = () => {
     const handleCloseModal = () => {
         setIsOpen(false);
     }
-
-    const songsList = useAppSelector(state => state.player);
-
 
     const playAll = () => {
         for (let i = 0; i < songsList.length; i++) {
